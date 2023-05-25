@@ -3,7 +3,7 @@
 
 def get_duplicate(in_list):  # Возвращаем список повторяющихся элементов входного списка
     v = set()
-    return list(set([x for x in in_list if x in v or v.add(x)]))
+    return list(set([x for x in in_list if x in v or v.add(x)])) # Если элемент уже есть в set, то возвращаем его
 
 
 if __name__ == '__main__':
